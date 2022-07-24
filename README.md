@@ -30,5 +30,4 @@ This cookiecutter template installs all modules using either Poetry or Pip (as s
 - [ ] convert {{ cookiecutter.project_slug }} to git submodule. Current Cookiecutter issue [#1469](https://github.com/cookiecutter/cookiecutter/pull/1469)
 - [ ] Configure a Docker version
 - [ ] Add license config
-- [ ] 
 - [ ] New default homepage once installed
