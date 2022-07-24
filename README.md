@@ -18,6 +18,8 @@ A [cookiecutter](https://github.com/cookiecutter/cookiecutter) template for quic
 
 1. Install Cookiecutter globally: `pip install cookiecutter`
 2. Generate the template `cookiecutter https://github.com/cording12/flask-tailwind-template-cookiecutter.git`
+3. Run Tailwind in a terminal with `npm run dev`
+4. Run the Flask app
 
 ### Local install
 
@@ -26,5 +28,7 @@ This cookiecutter template installs all modules using either Poetry or Pip (as s
 ## To do
 - [X] Add Tailwind JIT compiling
 - [ ] convert {{ cookiecutter.project_slug }} to git submodule. Current Cookiecutter issue [#1469](https://github.com/cookiecutter/cookiecutter/pull/1469)
-- [ ] Build better default homepage once installed
 - [ ] Configure a Docker version
+- [ ] Add license config
+- [ ] 
+- [ ] New default homepage once installed
