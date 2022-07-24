@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "flask-tailwind-template"
+version = "0.1.0"
+description = ""
+authors = ["cording12 <joncording12@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+isort = "^5.10.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+colorama = "^0.4.5"
+
+[tool.black]
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | venv
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+# make it compatible with black
+profile = "black" 
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+# Configuration for formatters

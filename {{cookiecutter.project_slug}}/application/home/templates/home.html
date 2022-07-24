@@ -1,0 +1,16 @@
+{% raw %}
+{% extends 'base.html' %} 
+
+{% block title %} {{ title }} {% endblock %} 
+
+{% block head_load %} 
+    {% assets "home_style_bundle" %}
+        <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css" />
+    {% endassets %} 
+    {% assets "home_js_bundle" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %} 
+{% endblock %} 
+
+{% block main %} This is the body {% endblock %}
+{% endraw %}

@@ -1,0 +1,46 @@
+{% raw %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Site description to go here" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/static/assets/img/lolfavicon.png"
+    />
+
+    {% assets "common_js_bundle" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}" defer="defer"></script>
+    {% endassets %} {% assets "lib_js_bundle" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %} {% assets "common_style_bundle" %}
+    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css" />
+    {% endassets %} {% assets "lib_css_bundle" %}
+    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css" />
+    {% endassets %}
+
+    <!-- Load from templates to document head -->
+    {% block head_load %}{% endblock %}
+
+    <!-- Page title -->
+    {% if title %}
+    <title>Site name | {% block title %}{% endblock %}</title>
+    {% else %}
+    <title>Site name</title>
+    {% endif %}
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Nav -->
+    {% include 'nav.html' %}
+
+    <!-- Page content -->
+    <main class="p-10">{% block main %}{% endblock %}</main>
+
+    <!-- Specific Page JS goes HERE  -->
+    {% block pagescripts %}{% endblock pagescripts %}
+  </body>
+</html>
+{% endraw %}

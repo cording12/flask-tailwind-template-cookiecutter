@@ -1,0 +1,29 @@
+{
+  "name": "Flask-Tailwind",
+  "version": "1.0.0",
+  "description": "Flask/Tailwind setup using npm (with purge for Production)",
+  "main": "",
+  "scripts": {
+    "dev": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss ./application/static/src/css/tailwind.css -o ./application/static/dist/css/tailwind-min.css -w",
+    "build:prod": "cross-env TAILWIND_MODE=build NODE_ENV=production postcss ./application/static/src/css/tailwind.css -o ./application/static/dist/css/tailwind-min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cording12/flask-tailwind-template.git"
+  },
+  "author": "Jon Cording",
+  "bugs": {
+    "url": "https://github.com/cording12/flask-tailwind-template/issues"
+  },
+  "homepage": "https://github.com/cording12/flask-tailwind-template#readme",
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "autoprefixer": "^10.2.6",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.2",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.4"
+  },
+  "dependencies": {}
+}
