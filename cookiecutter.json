@@ -2,7 +2,7 @@
   "project_name": "flask-tailwind",
   "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
   "description": "",
-  "author": "Jon Cording",
+  "author": "",
   "email": "{{ cookiecutter.author.lower()|replace(' ', '-') }}@example.com",
   "version": "0.1.0",
   "license": [
